@@ -30,7 +30,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 4em;
+  height: 3em;
 }
 
 .page-container {
@@ -39,7 +39,7 @@ footer {
 }
 
 .content-wrap {
-  padding-bottom: 4em; /*footer size*/
+  padding-bottom: 3em; /*footer size*/
 }
 
 .footer {
@@ -50,8 +50,17 @@ footer {
 }
 
 .footer i {
-  flex: 1 1 1;
-  margin: 0 5px;
+  flex: 2 2 2;
+  margin: 0 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.footer i:hover {
+  border: 5px solid transparent;
+  font-size: 13px;
+  border-radius: 50%;
+  background: var(--hover-color);
 }
 
 .bg-color {
@@ -136,9 +145,11 @@ footer {
   padding: 50px;
 }
 .projects-box-home img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+  border-radius: 5px;
+  box-shadow: 1px 5px 10px black;
 }
 
 .about-me-page {
@@ -176,6 +187,40 @@ footer {
   max-width: 90%;
 }
 
+.d-flex {
+  margin-top: 40px;
+}
+.d-flex p {
+  color: rgb(98, 74, 235);
+  font-size: larger;
+  padding: 20px 0 20px 20px;
+}
+
+.d-flex h1 {
+  border-right: 2px solid rgba(98, 74, 235, 0.833);
+  padding: 25px;
+  height: 100%;
+  text-align: right;
+}
+
+.d-flex h1 span {
+  font-size: 0.5em;
+  opacity: 40%;
+}
+
+.d-flex p:hover {
+  border: 2px dashed rgba(98, 74, 235, 0.833);
+  border-radius: 5px;
+  background: white;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.146);
+}
+
+.d-flex a {
+  padding: 20px;
+  text-decoration: none;
+  color: rgb(98, 74, 235);
+}
+
 @media (max-width: 794px) {
   body {
     font-size: calc(10px + 0.45vw);
@@ -211,5 +256,11 @@ footer {
   .skills-box-about div {
     width: 100%;
     margin-bottom: 30px;
+  }
+
+  .d-flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
   }
 }
