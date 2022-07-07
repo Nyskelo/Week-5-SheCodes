@@ -149,7 +149,7 @@ footer {
   max-height: 100%;
   object-fit: fill;
   border-radius: 5px;
-  box-shadow: 1px 5px 10px black;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.575);
 }
 
 .contact-box-home {
@@ -205,9 +205,11 @@ footer {
 
 .box-projects img {
   max-width: 90%;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.575);
+  border-radius: 10px;
+  border: 10px double rgb(255, 255, 255);
 }
 
-.d-flex {
   margin-top: 40px;
 }
 .d-flex p {
