@@ -207,9 +207,10 @@ footer {
   max-width: 90%;
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.575);
   border-radius: 10px;
-  border: 10px double rgb(255, 255, 255);
+  border: 10px dotted rgb(255, 255, 255);
 }
 
+.d-flex {
   margin-top: 40px;
 }
 .d-flex p {
